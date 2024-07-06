@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tertis</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/c466fcbd2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="root">
+        <div class="card" id="helpcard">
+<h3>Objective</h3>
+The goal of Tetris is to clear lines by strategically placing falling tetrominoes (shapes made of four blocks) into a well or matrix.
+<br> <br>
+<h3>Controls</h3>
+Left/Right: Use the left and right arrow keys (or corresponding keys on your device) to move the tetromino left or right.
+<br> 
+Rotate: Use the up arrow key to rotate the tetromino. Each press rotates the shape 90 degrees.
+<br>
+Soft Drop: Use the down arrow key to speed up the fall of the tetromino.
+<br> 
+Hard Drop: Use the Enter key to instantly drop the tetromino to the bottom.
+        </div>
+        <div class="card" id="scoringcard">
+            Soft Drop : 1 x Distance <br>
+            Hard Drop : 2 x Distance <br>
+            Single Line Clear : 100 <br>
+            Double Line Clear : 200 <br>
+            Triple Line Clear : 400 <br>
+            Quadruple Line Clear: 800 <br>
+        </div>
+        <div class="card" id="levelcard">
+            <h2 id="levelnumber">LEVEL 2</h2>
+            <input type="range" min="1" max="5" id="level">
+        </div>
+        <div class="header">
+            <i class="fa-solid fa-bars" id="more"></i>
+            <div class="title">TETROMINOES</div>
+            <div class="start" id="start">
+                START
+            </div>
+            <div id="help">HELP</div>
+            <div id="scoring">SCORING</div>
+        </div>
+        <div class="horiz">
+            <div id="scoreboard">
+                <div class="score">
+                    Score
+                    <div class="value" id="scorevalue">
+                        0
+                    </div>
+                </div>
+                <div class="lines">
+                    Lines
+                    <div class="value" id="lines">
+                        0
+                    </div>
+                </div>
+                <div class="highscore">
+                    High score
+                    <div class="value" id="highscore">
+                        0
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- main game box-->
+            </div>
+            <div class="controlcenter">
+                <div class="nextpiece">
+                    <!-- next piece box -->
+                </div>
+                <div class="controls vert">
+                    <button id="rotate">Rotate</button><br>
+                        <div class="horiz"><button id="left">Left</button>
+                        <button id="right">Right</button> </div>
+                    <br>
+                    <button id="down">Down</button>
+                    <br>
+                    <button id="drop">Drop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
